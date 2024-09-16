@@ -2,13 +2,6 @@
 
   <form method="post" action="{{ route('activities.store') }}">
     @csrf
-  
-    <!-- Name -->
-    <div>
-      <x-input-label for="name" :value="__('Activity name')" />
-      <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-      <x-input-error :messages="$errors->get('name')" class="mt-2" />
-    </div>
 
     <!-- Type -->
     <div class="mt-4">
@@ -18,13 +11,7 @@
         name="type"
         id="type"
         class="block mt-1 w-full"
-        :options="[
-            'surf' => 'Surf',
-            'windsurf' => 'Windsurf',
-            'kayak' => 'Kayak',
-            'atv' => 'ATV',
-            'hot air balloon' => 'Hot Air Balloon'
-        ]"
+        :options="['surf' => 'Surf', 'windsurf' => 'Windsurf', 'kayak' => 'Kayak', 'atv' => 'ATV', 'hot air balloon' => 'Hot Air Balloon']"
         required
         />
       <x-input-error :messages="$errors->get('type')" class="mt-2" />

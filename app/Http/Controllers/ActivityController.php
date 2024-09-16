@@ -92,6 +92,9 @@ class ActivityController extends Controller
     public function edit(string $id)
     {
         //
+        $activity = Activity::find($id);
+
+        return view('activity.edit', ['activity' => $activity]);    
         
     }
 
