@@ -19,5 +19,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        \DB::unprepared(file_get_contents(base_path('seed.sql')));
     }
 }
