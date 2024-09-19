@@ -3,7 +3,7 @@
       <script>
           document.addEventListener('DOMContentLoaded', function () {
               Toastify({
-                  text: "fdsafdsafdas",
+                  text: "{{ session('success') }}",
                   duration: 3000,
                   close: false,
                   gravity: "top",
