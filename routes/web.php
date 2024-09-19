@@ -9,8 +9,23 @@ use Illuminate\Support\Facades\Route;
 
  
 Route::get('/', function () {
-    // return view('welcome');
     return view('home');
+});
+Route::redirect('/index.html', '/');
+Route::get('/about.html', function () {
+    return view('about');
+});
+Route::get('/rooms.html', function () {
+    return view('rooms');
+});
+Route::get('/details.html', function () {
+    return view('details');
+});
+Route::get('/offers.html', function () {
+    return view('offers');
+});
+Route::get('/contact.html', function () {
+    return view('contact');
 });
 
 Route::get('/dashboard', function () {
