@@ -6,8 +6,8 @@ const swiperGallery = new Swiper(".swiper.contact__maps__slider", {
   },
 });
 
-const contactForm = document.getElementById("contact-form");
-const handleClickForm = (event) => {
-  event.preventDefault();
-}
-contactForm.addEventListener("click", handleClickForm);
+// const contactForm = document.getElementById("contact-form");
+// const handleClickForm = (event) => {
+//   event.preventDefault();
+// }
+// contactForm.addEventListener("click", handleClickForm);

@@ -12,11 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.9/jquery.inputmask.min.js" defer integrity="sha512-F5Ul1uuyFlGnIT1dk2c4kB4DBdi5wnBJjVhL7gQlGh46Xn0VhvD8kgxLtjdZ5YN83gybk/aASUAlpdoWUjRR3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.js"></script>
     <script src="{{ asset('js/navbar.js') }}" defer></script>
 
     <!-- Additional -->
@@ -37,16 +39,16 @@
         </div>
         <ul id="navbar-menu" class="navbar__menu">
           <li class="navbar__menu__link">
-            <a href="./about.html">About Us</a>
+            <a href="/about.html">About Us</a>
           </li>
           <li class="navbar__menu__link">
-            <a href="./rooms.html">Rooms</a>
+            <a href="/rooms.html">Rooms</a>
           </li>
           <li class="navbar__menu__link">
-            <a href="./offers.html">Offers</a>
+            <a href="/offers.html">Offers</a>
           </li>
           <li class="navbar__menu__link">
-            <a href="./contact.html">Contact</a>
+            <a href="{{ route('contacts.create') }}">Contact</a>
           </li>
         </ul>
         <button class="navbar__button">
