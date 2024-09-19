@@ -2,12 +2,15 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ActivityController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\RoomController;
 use App\Http\Middleware\CheckPostmanRequest;
 use Illuminate\Support\Facades\Route;
 
  
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return view('home');
 });
 
 Route::get('/dashboard', function () {
@@ -20,6 +23,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     
     Route::resource('activities', ActivityController::class);
+    // Route::resource('bookings', ActivityController::class);
+    // Route::resource('rooms', ActivityController::class);
 });
 
 
