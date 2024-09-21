@@ -10,8 +10,8 @@ const handleClickMenuButton = () => {
 }
 menuButton.addEventListener("click", handleClickMenuButton);
 
-const handleClickLogo = (event) => {
-  window.location.href = "./index.html"
+const handleClickLogo = () => {
+  window.location.href = navbarLogo.getAttribute('data-home-url');
 }
-navbarLogo.addEventListener("click", handleClickLogo)
+navbarLogo.addEventListener("click", handleClickLogo);
 

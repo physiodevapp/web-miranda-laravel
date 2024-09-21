@@ -33,13 +33,13 @@
           <img id="menu-button-open" class="navbar__button__image show" src="/images/1 (1).svg" alt="">
           <img id="menu-button-close" class="navbar__button__image" src="/images/1 (2).svg" alt="">
         </button>
-        <div class="navbar__brand">
+        <div class="navbar__brand" data-home-url="{{ route('home') }}">
           <img class="navbar__brand__logo" src="/images/H.svg" alt="">
           <img class="navbar__brand__title" src="/images/Hotel Miranda.svg" alt="">
         </div>
         <ul id="navbar-menu" class="navbar__menu">
           <li class="navbar__menu__link">
-            <a href="/about.html">About Us</a>
+            <a href="{{ route('about') }}">About Us</a>
           </li>
           <li class="navbar__menu__link">
             <a href="/rooms.html">Rooms</a>

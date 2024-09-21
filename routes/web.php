@@ -11,18 +11,16 @@ use Illuminate\Support\Facades\Route;
  
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
-Route::redirect('/index.html', '/');
+Route::resource('contacts', ContactController::class)->only([
+    'create', 'store'
+]);
 
-Route::resource('contacts', ContactController::class);
-// Route::get('/contact.html', function () {
-//     return view('contact');
-// });
-
-Route::get('/about.html', function () {
+Route::get('about', function () {
     return view('about');
-});
+})->name('about');
+
 Route::get('/rooms.html', function () {
     return view('rooms');
 });
