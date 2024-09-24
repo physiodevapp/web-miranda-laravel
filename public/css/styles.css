@@ -1285,6 +1285,15 @@ img, video {
   background-color: white;
   padding: 0.68em 1.3em;
   box-shadow: 0px 8px 16px 0px rgba(138, 138, 138, 0.0509803922);
+
+  .feature {
+    opacity: 0.2;
+
+    &.feature--included {
+      opacity: 1;
+    }
+  }
+
 }
 .rooms__slider__room-card__features .feature {
   padding: 0em 0.43em;
@@ -1731,6 +1740,11 @@ img, video {
 }
 .details__related-rooms__slider .related-rooms__slider__room-card__features .feature {
   padding: 0em 0.43em;
+  opacity: 0.2;
+
+  &.feature--included {
+    opacity: 1;
+  }
 }
 .details__related-rooms__slider .related-rooms__slider__room-card__features .feature img {
   line-height: 100%;
@@ -2373,7 +2387,7 @@ img, video {
   .contact__form__button {
     width: unset;
     padding: 1.6em 7.3em;
-    margin: 0em auto;
+    margin: 2em auto;
   }
 }
 

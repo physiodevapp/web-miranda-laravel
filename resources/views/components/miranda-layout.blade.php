@@ -42,10 +42,10 @@
             <a href="{{ route('about') }}">About Us</a>
           </li>
           <li class="navbar__menu__link">
-            <a href="/rooms.html">Rooms</a>
+            <a href="{{ route('rooms.index') }}">Rooms</a>
           </li>
           <li class="navbar__menu__link">
-            <a href="/offers.html">Offers</a>
+            <a href="{{ route('rooms.indexOffers') }}">Offers</a>
           </li>
           <li class="navbar__menu__link">
             <a href="{{ route('contacts.create') }}">Contact</a>

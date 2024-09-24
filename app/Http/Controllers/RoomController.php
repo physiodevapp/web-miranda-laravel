@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Room;
+
 class RoomController extends Controller
 {
     /**
@@ -12,23 +14,31 @@ class RoomController extends Controller
     public function index()
     {
         //
-        return view('offers');
+        $rooms = Room::all();
+
+        foreach ($rooms as $room) {
+            $room->photos = explode(',', $room->photos);
+
+            $room->facilities = $room->facilities->toArray();
+        }
+
+        return view('rooms', compact('rooms'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function indexOffers()
     {
         //
-    }
+        $rooms = Room::withOffers()->get();
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
+        foreach ($rooms as $room) {
+            $room->facilities = $room->facilities->toArray();
+
+            $room->photos = explode(',', $room->photos);
+
+            $room->price_night = round($room->price_night, 0);
+        }
+
+        return view('offers', compact('rooms'));
     }
 
     /**
@@ -37,29 +47,21 @@ class RoomController extends Controller
     public function show(string $id)
     {
         //
+        $room = Room::find($id);
+
+        $room->photos = explode(',', $room->photos);
+
+        $room->facilities = $room->facilities->toArray();
+
+        $similarRooms = Room::withSameType($room)->get()->map(function ($similarRoom) {
+            $similarRoom->facilities = $similarRoom->facilities->toArray();
+        
+            $similarRoom->photos = explode(',', $similarRoom->photos);
+        
+            return $similarRoom;
+        });
+
+        return view('details', compact('room','similarRooms') );
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
-    }
 }

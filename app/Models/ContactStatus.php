@@ -15,7 +15,7 @@ class ContactStatus extends Model
         return $this->hasMany(Contact::class, 'status_id');
     }
 
-    public function getDefaultStatus()
+    public static function getDefaultStatus()
     {
         return self::where('name', '')->first()->id;
     }

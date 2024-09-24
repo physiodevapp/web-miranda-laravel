@@ -13,23 +13,19 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::resource('contacts', ContactController::class)->only([
-    'create', 'store'
-]);
-
 Route::get('about', function () {
     return view('about');
 })->name('about');
 
-Route::get('/rooms.html', function () {
-    return view('rooms');
-});
-Route::get('/details.html', function () {
-    return view('details');
-});
-Route::get('/offers.html', function () {
-    return view('offers');
-});
+Route::resource('rooms', RoomController::class)->only([
+    'index', 'show'
+]);
+
+Route::get('offers', [RoomController::class, 'indexOffers'])->name('rooms.indexOffers');
+
+Route::resource('contacts', ContactController::class)->only([
+    'create', 'store'
+]);
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

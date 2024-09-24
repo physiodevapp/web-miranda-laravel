@@ -1,106 +1,47 @@
+@php
+    $facilityImages = [
+        'Air conditioner' => '/images/svg-gobbler - 2022-03-03T180356.761 1 (1).svg',
+        'High speed WiFi' => '/images/svg-gobbler - 2022-03-03T180356.761 1.svg',
+        'Breakfast' => '/images/svg-gobbler - 2022-03-03T175828.668 1.svg',
+        'Kitchen' => '/images/svg-gobbler - 2022-03-03T180356.761 1 (2).svg',
+        'Cleaning' => '/images/svg-gobbler - 2022-03-03T175907.963 1.svg',
+        'Shower' => '/images/svg-gobbler - 2022-03-03T180356.761 1 (3).svg',
+        'Grocery' => '/images/svg-gobbler - 2022-03-03T175828.668 1 (1).svg',
+        'Single bed' => '/images/svg-gobbler - 2022-03-03T182946.721 1.svg',
+        'Shop near' => '/images/svg-gobbler - 2022-03-03T175828.668 1 (2).svg',
+        'Towels' => '/images/svg-gobbler - 2022-03-03T180356.761 1 (4).svg',
+        '24/7 Online Support' => '/images/svg-gobbler - 2022-03-03T183514.620 1.svg',
+        'Strong Locker' => '/images/svg-gobbler - 2022-03-03T183336.988 1.svg',
+        'Smart Security' => '/images/svg-gobbler - 2022-03-03T183435.137 1.svg',
+        'Expert Team' => '/images/svg-gobbler - 2022-03-03T183600.191 1.svg',
+    ];
+@endphp
+
 <x-miranda-layout>
   <main class="offers">
     <section class="offers__rooms">
-      <article class="offers__rooms__offer">
-        <figure class="offer__image">
-          <img src="/images/photo_1719001376258.jpg" alt="">
-        </figure>
-        <div class="offer__info">
-          <h5 class="offer__info__price offer__info__price--before"><span class="offer__info__price__value">$500</span><span class="offer__info__price__time">/Night</span></h5>
-          <h5 class="offer__info__price offer__info__price--after">$345<span class="offer__info__price__time">/Night</span></h5>
-          <h5 class="offer__info__subtitle">Double Bed</h5>
-          <h4 class="offer__info__title">Luxury Double Bed</h4>
-          <h6 class="offer__info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h6>
-          <ul class="offer__info__amenities">
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (1).svg"/>Air conditioner </li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1.svg"/>High speed WiFi</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175828.668 1.svg"/>Breakfast</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (2).svg"/>Kitchen</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175907.963 1.svg"/>Cleaning</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (3).svg"/>Shower</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175828.668 1 (1).svg"/>Grocery</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T182946.721 1.svg"/>Single bed</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175828.668 1 (2).svg"/>Shop near</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (4).svg"/>Towels</li>
-          </ul>
-          <button class="offer__info__button">Book now</button>
-        </div>
-      </article>
-      <article class="offers__rooms__offer">
-        <figure class="offer__image">
-          <img src="/images/photo_1718998276275.jpg" alt="">
-        </figure>
-        <div class="offer__info">
-          <h5 class="offer__info__price offer__info__price--before"><span class="offer__info__price__value">$500</span><span class="offer__info__price__time">/Night</span></h5>
-          <h5 class="offer__info__price offer__info__price--after">$345<span class="offer__info__price__time">/Night</span></h5>
-          <h5 class="offer__info__subtitle">Double Bed</h5>
-          <h4 class="offer__info__title">Luxury Double Bed</h4>
-          <h6 class="offer__info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h6>
-          <ul class="offer__info__amenities">
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (1).svg"/>Air conditioner </li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1.svg"/>High speed WiFi</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175828.668 1.svg"/>Breakfast</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (2).svg"/>Kitchen</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175907.963 1.svg"/>Cleaning</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (3).svg"/>Shower</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175828.668 1 (1).svg"/>Grocery</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T182946.721 1.svg"/>Single bed</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175828.668 1 (2).svg"/>Shop near</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (4).svg"/>Towels</li>
-          </ul>
-          <button class="offer__info__button">Book now</button>
-        </div>
-      </article>
-      <article class="offers__rooms__offer">
-        <figure class="offer__image">
-          <img src="/images/photo_1719001665985.jpg" alt="">
-        </figure>
-        <div class="offer__info">
-          <h5 class="offer__info__price offer__info__price--before"><span class="offer__info__price__value">$500</span><span class="offer__info__price__time">/Night</span></h5>
-          <h5 class="offer__info__price offer__info__price--after">$345<span class="offer__info__price__time">/Night</span></h5>
-          <h5 class="offer__info__subtitle">Double Bed</h5>
-          <h4 class="offer__info__title">Luxury Double Bed</h4>
-          <h6 class="offer__info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h6>
-          <ul class="offer__info__amenities">
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (1).svg"/>Air conditioner </li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1.svg"/>High speed WiFi</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175828.668 1.svg"/>Breakfast</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (2).svg"/>Kitchen</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175907.963 1.svg"/>Cleaning</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (3).svg"/>Shower</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175828.668 1 (1).svg"/>Grocery</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T182946.721 1.svg"/>Single bed</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175828.668 1 (2).svg"/>Shop near</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (4).svg"/>Towels</li>
-          </ul>
-          <button class="offer__info__button">Book now</button>
-        </div>
-      </article>
-      <article class="offers__rooms__offer">
-        <figure class="offer__image">
-          <img src="/images/photo_1718997953416.jpg" alt="">
-        </figure>
-        <div class="offer__info">
-          <h5 class="offer__info__price offer__info__price--before"><span class="offer__info__price__value">$500</span><span class="offer__info__price__time">/Night</span></h5>
-          <h5 class="offer__info__price offer__info__price--after">$345<span class="offer__info__price__time">/Night</span></h5>
-          <h5 class="offer__info__subtitle">Double Bed</h5>
-          <h4 class="offer__info__title">Luxury Double Bed</h4>
-          <h6 class="offer__info__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h6>
-          <ul class="offer__info__amenities">
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (1).svg"/>Air conditioner </li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1.svg"/>High speed WiFi</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175828.668 1.svg"/>Breakfast</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (2).svg"/>Kitchen</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175907.963 1.svg"/>Cleaning</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (3).svg"/>Shower</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175828.668 1 (1).svg"/>Grocery</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T182946.721 1.svg"/>Single bed</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T175828.668 1 (2).svg"/>Shop near</li>
-            <li class="offer__info__amenities__item"><img src="/images/svg-gobbler - 2022-03-03T180356.761 1 (4).svg"/>Towels</li>
-          </ul>
-          <button class="offer__info__button">Book now</button>
-        </div>
-      </article>
+      @foreach ($rooms as $room)
+        <article class="offers__rooms__offer">
+          <figure class="offer__image">
+            <img src="{{ $room->photos[0] }}" alt="">
+          </figure>
+          <div class="offer__info">
+            <h5 class="offer__info__price offer__info__price--before"><span class="offer__info__price__value">${{ $room->price_night }}</span><span class="offer__info__price__time">/Night</span></h5>
+            <h5 class="offer__info__price offer__info__price--after">${{ $room->finalPrice() }}<span class="offer__info__price__time">/Night</span></h5>
+            <h5 class="offer__info__subtitle">{{ $room->type }}</h5>
+            <h4 class="offer__info__title">{{ $room->name }}</h4>
+            <h6 class="offer__info__description">{{ $room->description }}</h6>
+            <ul class="offer__info__amenities">
+              @foreach ($room->facilities as $facility)
+                <li class="offer__info__amenities__item"><img src="{{ $facilityImages[$facility['name']] ?? '/images/default.svg' }}" alt="{{ $facility['name'] }}">{{ $facility['name'] }}</li>
+              @endforeach
+            </ul>
+            <button class="offer__info__button">
+              <a href="{{ route('rooms.show', $room->id) }}">Booking Now</a>
+            </button>
+          </div>
+        </article>
+      @endforeach
     </section>
     <section class="offers__popular-rooms">
       <h6 class="offers__popular-rooms__subtitle">Popular list</h6>
