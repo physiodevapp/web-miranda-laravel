@@ -1,5 +1,5 @@
 <x-miranda-layout>
-  <main class="home">
+  <main class="home" title="Home">
     <article class="home__availability">
       <form action="">
         <div>

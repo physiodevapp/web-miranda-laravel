@@ -29,7 +29,7 @@
   ];
 @endphp
 
-<x-miranda-layout>
+<x-miranda-layout title="Room Details">
   <main class="details">
     <section class="details__room">
       <div class="details__room__info">

@@ -27,7 +27,7 @@
   </head> 
   <body>
     <nav class="navbar">
-      <p class="navbar__message">We Make Your Feel Comfortable</p>
+      <p class="navbar__message">We Make You Feel Comfortable</p>
       <div class="navbar__wrapper">
         <button id="menu-button" class="navbar__button">
           <img id="menu-button-open" class="navbar__button__image show" src="/images/1 (1).svg" alt="">
@@ -59,14 +59,7 @@
         </button>
       </div>
     </nav>
-    <header class="header">
-      <div class="header__info" style="padding-bottom: 6em;">
-        <h6 class="header__info__subtitle">THE ULTIMATE LUXURY<br> EXPERIENCE</h6>
-        <h4 class="header__info__title header__title--home">The Perfect<br>Base For You</h4>
-        <button class="button button--primary">TAKE A TOUR</button>
-        <button class="button button--black">LEARN MORE</button>
-      </div>
-    </header>
+    <x-miranda-header :activePage="Route::currentRouteName()" />
     {{ $slot }}
     <footer class="footer" style="background-image: url('/images/Rectángulo\ 2\ 1.svg');">
       <div class="footer__wrapper">

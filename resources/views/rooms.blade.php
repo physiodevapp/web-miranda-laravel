@@ -29,8 +29,8 @@
   ];
 @endphp
 
-<x-miranda-layout>
-  <main class="rooms">
+<x-miranda-layout title="Rooms">
+  <main class="rooms" title="Rooms">
     <div class="swiper rooms__slider">
       <div class="swiper-wrapper">
         @foreach ($rooms as $room)

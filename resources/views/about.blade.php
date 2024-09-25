@@ -1,4 +1,4 @@
-<x-miranda-layout>
+<x-miranda-layout title="About Us">
   <main class="about">
     <section class="about__history">
       <iframe class="about__history__video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Bu3Doe45lcU?si=9HRVhvdSXwNgSY9d&amp;start=25&amp;end=75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

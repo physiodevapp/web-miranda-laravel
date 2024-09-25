@@ -17,7 +17,7 @@
     ];
 @endphp
 
-<x-miranda-layout>
+<x-miranda-layout title="Offers">
   <main class="offers">
     <section class="offers__rooms">
       @foreach ($rooms as $room)
