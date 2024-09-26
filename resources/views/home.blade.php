@@ -9,7 +9,7 @@
               <img src="/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.svg" alt="">
             </button>
             <input id="arrival-date-input" name="arrival-date" class="date-wrapper__date-input" type="date">
-            <input id="arrival-text-input" name="arrival-text" class="date-wrapper__text-input" type="text">
+            <input id="arrival-text-input" disabled name="arrival-text" class="date-wrapper__text-input" type="text">
           </div>
         </div>
         <div>
@@ -19,7 +19,9 @@
               <img src="/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1.svg" alt="">
             </button>
             <input id="departure-date-input" name="departure-date" class="date-wrapper__date-input" type="date">
-            <input id="departure-text-input" name="departure-text" class="date-wrapper__text-input" type="text">
+            <input id="departure-text-input" 
+            disabled 
+            name="departure-text" class="date-wrapper__text-input" type="text">
           </div>
         </div>
         <button class="button">Check availability</button>

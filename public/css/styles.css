@@ -72,6 +72,7 @@ img, video {
   padding-left: 1.8em;
 }
 .home__availability .date-wrapper {
+  position: relative;
   padding: 0.4em 0em 0.6em;
   border-bottom: 2px solid #BDAC8D;
   display: inline-flex;
@@ -80,9 +81,14 @@ img, video {
 }
 .home__availability .date-wrapper__button-picker {
   border: none;
-  background: #222222;
   line-height: 0px;
   vertical-align: bottom;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
 }
 .home__availability .date-wrapper__date-input {
   width: 0px;
@@ -92,8 +98,7 @@ img, video {
 }
 .home__availability .date-wrapper__text-input {
   border: none;
-  flex: 1;
-  margin-left: 0.8em;
+  margin-left: 1.8em;
   background-color: transparent;
   color: #FFFFFF;
   outline: none;
@@ -1511,30 +1516,40 @@ img, video {
   width: 100%;
 }
 .details__room__booking .date-wrapper {
-  padding: 0.4em 2em 0.6em;
+  padding: 0.4em 1em 0.6em 2em;
   display: inline-flex;
   width: 100%;
   margin-bottom: 2em;
+  position: relative;
 }
 .details__room__booking .date-wrapper__button-picker {
   border: none;
-  background: #FFFFFF;
   line-height: 0px;
-  vertical-align: bottom;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .details__room__booking .date-wrapper__date-input {
-  width: 0px;
-  height: 0px;
+  width: 100%;
   border: none;
 }
 .details__room__booking .date-wrapper__text-input {
   border: none;
   flex: 1;
   margin-left: 0.8em;
-  background-color: transparent;
+  background-color: white;
   color: #222222;
   outline: none;
   font-family: "Roboto";
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
 .details__room__booking .date-wrapper__text-input::placeholder {
   color: #686868;

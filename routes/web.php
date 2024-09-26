@@ -20,6 +20,7 @@ Route::get('about', function () {
 Route::resource('rooms', RoomController::class)->only([
     'index', 'show'
 ]);
+Route::post('rooms/{id}/check-availability', [RoomController::class, 'checkAvailability'])->name('rooms.checkAvailability');
 
 Route::get('offers', [RoomController::class, 'indexOffers'])->name('rooms.indexOffers');
 

@@ -30,6 +30,23 @@
 @endphp
 
 <x-miranda-layout title="Room Details">
+  @if (session('availabilityStatus'))
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        Toastify({
+          text: "{{ session('availabilityStatus') }}",
+          duration: 3000,
+          close: false,
+          gravity: "top",
+          position: 'right',
+          style: {
+            background: "#BDAC8D",
+          }
+        }).showToast();
+      });
+    </script>
+  @endif
+
   <main class="details">
     <section class="details__room">
       <div class="details__room__info">
@@ -41,11 +58,13 @@
         <figure class="details__room__booking__image">
           <img src="{{ $room->photos[0] }}" alt="">
         </figure>
-        <form action="" class="details__room__booking__form">
+        <form class="details__room__booking__form" method="post" action="{{ route('rooms.checkAvailability', ['id' => $room->id]) }}">
+          @csrf
+
           <label for="arrival-date-input" class="details__room__booking__form__label">Check In</label>
           <div class="date-wrapper">
             <input id="arrival-date-input" name="arrival-date" class="date-wrapper__date-input" type="date">
-            <input id="arrival-text-input" name="arrival-text" class="date-wrapper__text-input" type="text">
+            <input id="arrival-text-input" disabled name="arrival-text" class="date-wrapper__text-input" type="text">
             <button id="arrival-date-button" class="date-wrapper__button-picker">
               <img src="/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1 (1).svg" alt="">
             </button>
@@ -53,12 +72,16 @@
           <label for="departure-date-input" class="details__room__booking__form__label">Check Out</label>
           <div class="date-wrapper">
             <input id="departure-date-input" name="departure-date" class="date-wrapper__date-input" type="date">
-            <input id="departure-text-input" name="departure-text" class="date-wrapper__text-input" type="text">
+            <input id="departure-text-input" disabled name="departure-text" class="date-wrapper__text-input" type="text">
             <button id="departure-date-button" class="date-wrapper__button-picker">
               <img src="/images/7853753_event_kashifarif_calendar_schedule_appoinment_icon 1 (1).svg" alt="">
             </button>
           </div>
-          <button class="details__room__booking__form__button">Check Availability</button>
+          <button
+            type="submit"
+            class="details__room__booking__form__button">
+              Check Availability
+          </button>
         </form>
       </div>
     </section>
