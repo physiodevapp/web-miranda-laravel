@@ -11,24 +11,26 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bookings', function (Blueprint $table) {
-            $table->id();
+        if (!Schema::hasTable('bookings')) {
+            Schema::create('bookings', function (Blueprint $table) {
+                $table->id();
 
-            $table->unsignedBigInteger('status_id');
-            $table->unsignedBigInteger('room_id');
-            
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->text('special_request');
-            $table->dateTime('order_date', precision: 0);
-            $table->dateTime('check_in', precision: 0);
-            $table->dateTime('check_out', precision: 0);
+                $table->unsignedBigInteger('status_id');
+                $table->unsignedBigInteger('room_id');
+                
+                $table->string('first_name');
+                $table->string('last_name');
+                $table->text('special_request');
+                $table->dateTime('order_date', precision: 0);
+                $table->dateTime('check_in', precision: 0);
+                $table->dateTime('check_out', precision: 0);
 
-            $table->foreign('status_id')->references('id')->on('booking_statuses');
-            $table->foreign('room_id')->references('id')->on('rooms')->onDelete('cascade');
+                $table->foreign('status_id')->references('id')->on('booking_statuses');
+                $table->foreign('room_id')->references('id')->on('rooms')->onDelete('cascade');
 
-            $table->timestamps();
-        });
+                $table->timestamps();
+            });
+        }
     }
 
     /**

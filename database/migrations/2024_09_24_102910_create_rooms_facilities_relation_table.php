@@ -11,12 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rooms_facilities_relation', function (Blueprint $table) {
-            $table->id();
-            
-            $table->foreignId('room_id')->constrained()->onDelete('cascade');
-            $table->foreignId('facility_id')->constrained()->onDelete('cascade');
-        });
+        if (!Schema::hasTable('rooms_facilities_relation')) {
+            Schema::create('rooms_facilities_relation', function (Blueprint $table) {
+                $table->id();
+                
+                $table->foreignId('room_id')->constrained()->onDelete('cascade');
+                $table->foreignId('facility_id')->constrained()->onDelete('cascade');
+            });
+        }
     }
 
     /**

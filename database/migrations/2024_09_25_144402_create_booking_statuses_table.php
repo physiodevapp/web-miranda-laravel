@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('booking_statuses', function (Blueprint $table) {
-            $table->id();
+        if (!Schema::hasTable('booking_statuses')) {
+            Schema::create('booking_statuses', function (Blueprint $table) {
+                $table->id();
 
-            $table->string('name');
-        });
+                $table->string('name');
+            });
+        }
     }
 
     /**

@@ -11,24 +11,26 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rooms', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('status_id');
-            
-            $table->integer('number');
-            $table->text('description');
-            $table->string('name');
-            $table->text('cancellation_policy');
-            $table->integer('has_offer');
-            $table->string('type');
-            $table->decimal('price_night', 10, 2);
-            $table->integer('discount');
-            $table->string('photos');
+        if (!Schema::hasTable('rooms')) {
+            Schema::create('rooms', function (Blueprint $table) {
+                $table->id();
+                $table->unsignedBigInteger('status_id');
+                
+                $table->integer('number');
+                $table->text('description');
+                $table->string('name');
+                $table->text('cancellation_policy');
+                $table->integer('has_offer');
+                $table->string('type');
+                $table->decimal('price_night', 10, 2);
+                $table->integer('discount');
+                $table->string('photos');
 
-            $table->foreign('status_id')->references('id')->on('room_statuses');
+                $table->foreign('status_id')->references('id')->on('room_statuses');
 
-            $table->timestamps();
-        });
+                $table->timestamps();
+            });
+        }
     }
 
     /**

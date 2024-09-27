@@ -11,12 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('contact_statuses', function (Blueprint $table) {
-            $table->id();
-            $table->enum('name', ['', 'archived'])->unique();
+        if (!Schema::hasTable('contact_statuses')) {
+            Schema::create('contact_statuses', function (Blueprint $table) {
+                $table->id();
+                $table->enum('name', ['', 'archived'])->unique();
 
-            $table->timestamps();
-        });
+                $table->timestamps();
+            });
+        }
     }
 
     /**
