@@ -3,9 +3,7 @@
 <h1 align="center" style="font-weight: bold;">Web Miranda 💻</h1>
 
 <p align="center">
-
 <a href="#started">Getting Started</a>
-
  
 </p>
 
@@ -42,7 +40,7 @@ Here you list all prerequisites necessary for running the project:
 
 - [NodeJS](https://nodejs.org/en/download/package-manager/current)
 - [Git](https://git-scm.com/downloads)
-- [PHP](https://www.php.net/downloads) (>= 7.3)
+- [PHP](https://www.php.net/downloads)
 - [MySQL](https://dev.mysql.com/downloads/)
 
 <h3>Cloning</h3>
