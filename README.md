@@ -32,8 +32,6 @@
 
 <h2 id="started">🚀 Getting started</h2>
 
-How to run the project locally
-
 <h3>Prerequisites</h3>
 
 Here you list all prerequisites necessary for running the project:
