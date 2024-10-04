@@ -36,8 +36,6 @@
 
 Here you list all prerequisites necessary for running the project:
 
-- [NodeJS](https://nodejs.org/en/download/package-manager/current)
-- [Git](https://git-scm.com/downloads)
 - [PHP](https://www.php.net/downloads)
 - [MySQL](https://dev.mysql.com/downloads/)
 
