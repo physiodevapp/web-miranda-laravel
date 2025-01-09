@@ -97,12 +97,12 @@
                   />
                 </li>
               </ul>
-              <h4 class="popular-rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+              <h4 class="popular-rooms__slider__room-card__title" data-field="title">Bespoke Metal Chicken</h4>
               <h6 class="popular-rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
-              <span class="popular-rooms__slider__room-card__price" data-field="price">$345/Night</span>
+              <span class="popular-rooms__slider__room-card__price" data-field="price">$226.92/Night</span>
               <button class="popular-rooms__slider__room-card__button">Booking Now</button>
             </article>
-          </div>
+        </div>
           <div class="swiper-slide">
             <article class="popular-rooms__slider__room-card">
               <figure class="popular-rooms__slider__room-card__image">
@@ -152,9 +152,9 @@
                   />
                 </li>
               </ul>
-              <h4 class="popular-rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+              <h4 class="popular-rooms__slider__room-card__title" data-field="title">Practical Steel Gloves</h4>
               <h6 class="popular-rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
-              <span class="popular-rooms__slider__room-card__price" data-field="price">$345/Night</span>
+              <span class="popular-rooms__slider__room-card__price" data-field="price">$325.21/Night</span>
               <button class="popular-rooms__slider__room-card__button">Booking Now</button>
             </article>
           </div>
@@ -207,9 +207,9 @@
                   />
                 </li>
               </ul>
-              <h4 class="popular-rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+              <h4 class="popular-rooms__slider__room-card__title" data-field="title">Refined Frozen Gloves</h4>
               <h6 class="popular-rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
-              <span class="popular-rooms__slider__room-card__price" data-field="price">$345/Night</span>
+              <span class="popular-rooms__slider__room-card__price" data-field="price">$280.97/Night</span>
               <button class="popular-rooms__slider__room-card__button">Booking Now</button>
             </article>
           </div>

@@ -114,7 +114,7 @@
                 </ul>
               </li>
               <div class="room-card-wrapper">
-                <h4 class="popular-rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h4 class="popular-rooms__slider__room-card__title" data-field="title">Refined Frozen Gloves</h4>
                 <h6 class="popular-rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
                 <h5 class="popular-rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
               </div>
@@ -171,7 +171,7 @@
                 </li>
               </ul>
               <div class="room-card-wrapper">
-                <h4 class="popular-rooms__slider__room-card__title" data-field="title">Minimal Duplex Room</h4>
+                <h4 class="popular-rooms__slider__room-card__title" data-field="title">Practical Steel Gloves</h4>
                 <h6 class="popular-rooms__slider__room-card__subtitle" data-field="subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
                 <h5 class="popular-rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
               </div>
@@ -228,7 +228,7 @@
                 </li>
               </ul>
               <div class="room-card-wrapper">
-                <h4 class="popular-rooms__slider__room-card__title">Minimal Duplex Room</h4>
+                <h4 class="popular-rooms__slider__room-card__title">Bespoke Metal Chicken</h4>
                 <h6 class="popular-rooms__slider__room-card__subtitle">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</h6>
                 <h5 class="popular-rooms__slider__room-card__price">$345<span class="room-card__price__time">/Night</span></h5>
               </div>
